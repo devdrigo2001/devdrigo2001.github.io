@@ -45,6 +45,18 @@ hr{
     border: 0.5px solid ;
 }
 
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fcee0a;
+    line-height: 40px;
+}
+
+a:hover{
+    color:aqua;
+}
+
+
 
 /*..*/
 
@@ -70,6 +82,7 @@ hr{
 
 
 
+
 /*Main*/
 
 main{
@@ -85,6 +98,18 @@ main{
 
 
 /*Section*/
+
+section.contact-section{
+
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    border: 3px solid #fcee0a;
+    border-radius: 35px;
+    width: 100%;
+    margin: 30px
+
+}
 
 section.main-section{
     float: left;
@@ -173,21 +198,8 @@ header{
 
 
 /*Footer*/
-h2.global-footer-header{
-    border-left: 1.5px solid #fcee0a;
-    border-bottom:  3px solid #fcee0a;
-    font-size: 20px;
 
-}
-div.global-footer-content{
-    background-color: #000000;
-    float: left;
-    padding: 10px;
-    margin: 30px;
-    border: 3px solid #fcee0a;
-    border-radius: 35px;
 
-}
 footer.global{
     background-color: #000000;
     width: 100%;
@@ -203,4 +215,19 @@ footer p {
     line-height: 30px;
 }
 
+.footer-text-container{
+    
+  
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   padding: 0px;
+   
+}
+ .footer-text-container h3.info{
+    font-size: 20px;
+    border-right: 3px solid #fcee0a;
+    line-height: 10px;
+    
+ }
 
