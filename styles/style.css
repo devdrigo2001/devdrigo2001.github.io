@@ -1,7 +1,7 @@
 /*General styles*/
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    
 }
 
 body {
@@ -11,6 +11,8 @@ body {
     font-size: 15px;
 
 }
+
+
 
 h1 {
     font-size: 3rem;
@@ -30,10 +32,23 @@ ul {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+   
+}
 
 /*Header*/
+#main-header h1{
+    text-shadow: 1px 1px 1px;
+  
+ }
 
 
+
+ #main-header ul{
+    text-shadow: 1px 1px 1px;
+  
+ }
 
 
 
@@ -48,8 +63,10 @@ ul {
 }
 
 .header-logo {
-    width: 30%;
+    
+    width: 100%;
     flex: 1;
+ margin-left: 30px;
 
 }
 
@@ -70,6 +87,54 @@ ul {
 
 }
 
+.menu li a {
+    position: relative;
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ 
+    height: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    background: linear-gradient(90deg,
+    #000000, #000000);
+    transition: .5s;
+}
+
+.menu li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    height: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+    background: linear-gradient(90deg,
+    #000000, #000000);
+    transition: .5s;
+
+}
+
+.menu li:hover a:before {
+    transform: translateX(99%);
+    width: 50%;
+
+}
+
+
+.menu li:hover a:after{
+    transform: translateX(-99%);
+    width: 50%;
+}
+
 
 
 #profile {
@@ -81,6 +146,17 @@ ul {
 
     width: 150px;
     border-radius: 50%;
+    box-shadow: 1px 1px 5px;
+    margin: 10px;
+
+
+}
+
+#profile img:hover {
+
+    box-shadow: 1px 1px 25px;
+
+    
 
 
 }
@@ -96,6 +172,7 @@ ul {
     .menu {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         
         
 
