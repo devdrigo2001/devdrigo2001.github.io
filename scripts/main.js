@@ -14,3 +14,21 @@ menu_perfil.addEventListener('click',() =>{
 
 });
 
+//barra animada do perfil
+let valor_barra = document.querySelector('.valor_barra');
+let barra = document.querySelector('.barra');
+
+let valor_atual_barra = 0;
+let valor_final_barra = 23;
+
+let progresso  = setInterval(()=>{
+valor_atual_barra++;
+valor_barra.textContent = `${valor_atual_barra}`;
+barra.style.background = `conic-gradient(rgb(78,236,20) ${valor_atual_barra * 15}deg, rgb(230,224,224) 0deg)`;
+if(valor_atual_barra == valor_final_barra){
+    clearInterval(progresso);
+}
+},80);
+
+
+
