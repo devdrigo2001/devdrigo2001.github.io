@@ -6,14 +6,42 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: black;
+    background-color: var(--root-background)!important;
+    color: var(--color)!important;
     font-size: 15px;
   
 
 
 }
+:root{
+    
+    --root-background: #f0f0f0;
+    --color: #000000;
+    --background:white;
+    --base-variant:white;
+    --primary-color{
+        color:black;
+    }
+    
+   
+    
+}
 
+.dark_mode{
+    --root-background:#808080;
+    --color: #ffffff;
+    --background:black;
+    --primary-color:white;
+    --base-variant:black;
+        
+    
+    
+    
+}
+
+section{
+   width: 100%;
+}
 
 
 
@@ -57,7 +85,7 @@ a{
 
 
 #main-header {
-    background-color: #ffffff;
+    
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -94,7 +122,7 @@ a{
     position: relative;
     font-size: 36px;
     text-decoration: none;
-    color: black;
+    color:var(--color);
 }
 
 
@@ -106,7 +134,7 @@ a{
     bottom: -5px;
     width: 0;
     height: 5px;
-    background-color: #000000;
+    background-color: black;
     transition: 0.5s ;
 
 }
@@ -116,6 +144,50 @@ a{
 .menu li:hover a::after{
     width: 100%;
    
+}
+
+
+
+#light_switch{
+    align-self: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    position: sticky;
+   
+    
+   
+
+}
+
+#light_switch svg{
+fill: var(--primary-color);
+}
+
+
+#light_switch svg:last-child{
+    display: none;
+}
+
+.dark_mode #light_switch svg:first-child{
+    display: none;
+}
+
+.dark_mode #light_switch svg:last-child{
+    display: block;
+}
+
+
+
+
+
+
+
+#light_switch svg:hover{
+  
+   width: 70px;
+   height: 70px;
+
 }
 
 
@@ -185,13 +257,14 @@ a{
 /*Perfil section*/
 
 #perfil{
-    background-color: #ffffff;
+    background-color: var(--background);
     flex-direction: column;
    gap: 20px;
     align-items: center;
     display: none;
     margin-top: 50px;
     width: 100%;
+    height: 700px;
 }
 
 #perfil h2{
@@ -211,7 +284,7 @@ a{
 .barra::before{
     content: "";
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background);
     width: 280px;
     height: 280px;
     border-radius: 50%;
@@ -233,7 +306,7 @@ a{
     position: absolute;
     top: 60%;
     left: 45%;
-    color: #000000;
+    color: var(--color);
     text-shadow: 1px 1px 1px #000000;
     
     
@@ -254,3 +327,7 @@ a{
 #projetos{
     display: block;
 }
+
+
+/*Lightswitch
+*/

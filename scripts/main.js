@@ -28,7 +28,30 @@ barra.style.background = `conic-gradient(rgb(78,236,20) ${valor_atual_barra * 15
 if(valor_atual_barra == valor_final_barra){
     clearInterval(progresso);
 }
-},80);
+},500);
 
 
 
+//lightswitch
+let darkmode = localStorage.getItem('dark_mode');
+
+const lightswitch = document.getElementById('light_switch');
+
+const enableDarkmode = () =>{
+    document.body.classList.add('dark_mode');
+    localStorage.setItem('dark_mode', 'active');
+}
+
+const disableDarkmode = () =>{
+    document.body.classList.remove('dark_mode');
+    localStorage.setItem('dark_mode', 'null');
+}
+
+if(darkmode === "active") enableDarkmode()
+
+
+lightswitch.addEventListener("click", ()=>{
+    darkmode =localStorage.getItem('dark_mode');
+
+    darkmode != "active" ? enableDarkmode() : disableDarkmode();
+});
