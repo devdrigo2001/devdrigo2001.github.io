@@ -1,6 +1,6 @@
 
 
-
+//Perfil section
 menu_perfil = document.querySelector('.menu-perfil');
 perfil_section = document.querySelector("#perfil");
 
