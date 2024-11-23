@@ -15,47 +15,61 @@
     <header id="main-header">
 
         <h1 class="header-logo">Rodrigo Portfolio</h1>
-        <ul class ="menu">
+        <ul class="menu">
             <li><a class="menu-perfil" href="#">Perfil</a></li>
             <li><a class="menu-projetos" href="#">Projetos</a></li>
             <li><a class="menu-loja" href="#">Loja</a></li>
         </ul>
 
         <div id="light_switch">
-            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-            
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000000">
+                <path
+                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF">
+                <path
+                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+
         </div>
 
         <div id="profile">
             <img src="images/perfil.jpg"></img>
         </div>
 
-        
+
 
     </header>
 
     <section id="perfil">
 
 
+        <div class="skill-container">
+            <div class="barra">
+                <h1 style="text-align: center; position: absolute; top: 10px; left: 30%;">Perfil</h1>
+                <span class="valor_barra"></span>
+                <span class="barra-content">
+                    Nível
 
-        <div class="barra">
-            <h1 style="text-align: center; position: absolute; top: 10px; left: 30%;">Perfil</h1>
-            <span class="valor_barra"></span>
-            <span class="barra-content">
-                Nível
-
-            </span>
+                </span>
+            </div>
         </div>
 
         <div class="tech-skill">
             <h2>
                 Habilidades técnicas
             </h2>
-            
-            <i>Html, Css, Javascript, React, React-native
-             </i>
-            
+
+            <div class="tech-info">
+                <div><img src="./images/icons8-html.svg"><br>HTML</div>
+                <div><img src="./images/icons8-css.svg"><br>CSS</div>
+                <div><img src="./images/icons8-javascript.svg"><br>JavaScript</div>
+                <div><img src="./images/icons8-react.svg"><br>React</div>
+                <div><img src="./images/icons8-react-native.svg"><br>React Native</div>
+
+
+            </div>
+
 
 
         </div>
@@ -64,8 +78,35 @@
             <h2>
                 Habilidades comportamentais
             </h2>
-            <i">Paciência, pensamento criativo, resolução de problemas</i>
-            
+            <p><strong>Paciência, pensamento criativo, resolução de problemas</strong></p>
+
+        </div>
+
+        <h2 style="text-align: center; display: block;">Serviços</h2>
+        <div id="servicos">
+            <div>
+                <h3>Desenvolvimento de sites</h3>
+                <img src="./images/icons8-work-50.png">
+                <details>Criação de sites para empresas ou pessoas, apresentando seus serviços/produtos, contatos e
+                    mais.</details>
+                <p class="valor-servico">Valor médio R$1000</p>
+
+            </div>
+            <div>
+                <h3>Serviços personalizados</h3>
+                <img src="./images/icons8-work-50.png">
+                <details>Soluções sob medida conforme as necessidades específicas do cliente</details>
+                <p class="valor-servico">Valor médio a partir de orçamento</p>
+
+            </div>
+            <div>
+                <h3>Manutenção de sites</h3>
+                <img src="./images/icons8-work-50.png">
+                <details>Serviços de atualização de conteúdo, melhorias e perfomance</details>
+                <p class="valor-servico">Valor médio a partir de orçamento</p>
+
+            </div>
+
         </div>
 
     </section>
@@ -75,8 +116,24 @@
 
 
     </section>
-    
 
+    <footer id="global-footer">
+        <div class="contato">
+            <img src="./images/icons8-email-48.png">
+            <p>devdrigo01@gmail.com</p>
+        </div>
+        <div class="contato">
+            <img src="./images/icons8-direitos-autorais-40.png">
+            <p>2024 Rodrigo Souza. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="contatos">
+            <a href="https://instagram.com/drigosantos2001"><img src="./images/icons8-instagram-velho-48.png"></a>
+            <a href="https://github.com/devdrigo2001"><img src="./images/icons8-github-48.png"></a>
+            <a href="https://www.linkedin.com/in/devdrigo01/"><img src="./images/icons8-linkedin-48.png"></a>
+            
+        </div>
+    </footer>
     <script src="./scripts/main.js"></script>
 </body>
 
