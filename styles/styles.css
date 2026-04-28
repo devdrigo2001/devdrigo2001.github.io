@@ -1,0 +1,17 @@
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+
+:root{
+    --yellow: #FFE55C;
+    --pink:   #FF6B9D;
+    --blue:   #4ECBFF;
+    --green:  #5BFFA0;
+    --dark:   #0D0D0D;
+    --offwhite: #F5F2EB;
+}
+html{scroll-behavior: smooth;}
+body{
+    font-family: 'DM Sans', sans-serif;
+    background:var(--dark);
+    color:var(--offwhite);
+    overflow-x:hidden;
+}
