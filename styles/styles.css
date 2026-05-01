@@ -272,3 +272,54 @@ section{padding: 7rem 3rem;}
     border-radius: 100px;
     color: rgba(255, 255, 255, .5);
 }
+/* ── CONTATO ── */
+    #contato {
+      background: #111;
+      text-align: center;
+    }
+    .contato-inner { max-width: 600px; margin: 0 auto; }
+    #contato .section-title { margin-bottom: 1rem; }
+    .contato-sub {
+      font-size: 1rem; line-height: 1.7;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 3rem;
+    }
+    .contato-links {
+      display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
+    }
+    .contact-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: .8rem 1.6rem;
+      border-radius: 100px;
+      font-size: .9rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.15);
+      color: var(--offwhite);
+      transition: background .2s, border-color .2s, transform .2s;
+    }
+    .contact-pill:hover { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.3); transform: translateY(-2px); }
+    .contact-pill svg { width: 16px; height: 16px; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem 3rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.2);
+      border-top: 1px solid rgba(255,255,255,.05);
+    }
+
+    /* ── REVEAL ANIMATION ── */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1.2rem 1.5rem; }
+      .nav-links { display: none; }
+      #hero, section { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
